@@ -1,0 +1,194 @@
+.apod-container {
+  width: 100%;
+  height: 100svh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 15px 0 0 0;
+  position: relative;
+}
+
+.apod-opacity-layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.apod-picture-contained-view {
+  width: 510px;
+  height: 480px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.apod-page-title {
+  font-family: var(--font-family-two);
+  text-transform: capitalize;
+  font-size: 1em;
+  text-align: center;
+  color: var(--accent-color-one);
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.apod-pic-topic {
+  font-family: var(--font-family-three);
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--accent-color-two);
+  max-width: 450px;
+  margin-left: 15px;
+  z-index: 1;
+}
+
+.apod-date {
+  font-family: var(--font-family-one);
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: var(--accent-color-two);
+  margin-top: 5px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+.apod-explanation-container {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: hidden;
+  padding: 15px;
+  z-index: 1;
+}
+
+.apod-expand-btn {
+  width: 100%;
+  max-width: 250px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family-three);
+  background-color: transparent;
+  color: var(--accent-color-two);
+}
+
+.visible-icon {
+  font-size: 1.2em;
+}
+
+.apod-expand-btn:hover {
+  cursor: pointer;
+}
+
+.apod-description {
+  width: 100%;
+  max-width: 800px;
+  color: var(--accent-color-four);
+  font-family: var(--font-family-five);
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.8em;
+  overflow: hidden;
+  max-height: 250px;
+  transition: max-height 0.8s;
+  margin: 10px 0;
+}
+
+.apod-date-picker-container {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--accent-color-four);
+  font-family: var(--font-family-three);
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.8em;
+  overflow: hidden;
+  max-height: 250px;
+  transition: max-height 0.8s;
+  margin-top: 10px;
+}
+
+.shrink {
+  max-height: 0;
+}
+
+.expand {
+  max-height: 290px;
+}
+
+.apod-date-picker {
+  width: 65%;
+}
+
+.apod-date-picker[type="date"] {
+  background: transparent;
+  color: var(--accent-color-two);
+  border: none;
+  font-family: var(--font-family-three);
+  outline: none;
+}
+
+.get-apod-btn {
+  background-color: var(--accent-color-four);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 10px;
+  color: var(--accent-color-three);
+}
+
+.get-apod-btn:hover {
+  cursor: pointer;
+}
+
+.apod-date-picker[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}
+/*stylings for small size screens */
+@media only screen and (max-width: 576px) {
+  .apod-pic-topic {
+    font-size: 2em;
+  }
+
+  .apod-opacity-layer {
+    display: none;
+  }
+}
+
+/*stylings for medium size screens */
+@media only screen and (min-width: 577px) and (max-width: 968px) {
+  .apod-pic-topic {
+    font-size: 3em;
+  }
+
+  .apod-opacity-layer {
+    display: none;
+  }
+}
+
+/*stylings for desktops and large size screens */
+@media only screen and (min-width: 969px) {
+  .apod-pic-topic {
+    font-size: 3em;
+  }
+}

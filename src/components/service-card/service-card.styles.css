@@ -1,0 +1,91 @@
+.service-card-container {
+  position: relative;
+  height: 380px;
+  width: 250px;
+  background-color: var(--accent-color-two);
+  padding: 6px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service-card-image-container {
+  clip-path: polygon(0 0, 100% 0%, 100% 54%, 0 88%);
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-three),
+    transparent
+  );
+  z-index: 1;
+}
+
+.service-card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-short-name {
+  top: 180px;
+  right: 20px;
+  position: absolute;
+  font-family: var(--font-family-two);
+  font-weight: 800;
+  font-size: 1.2em;
+  color: var(--accent-color-four);
+}
+
+.service-name {
+  position: absolute;
+  top: 220px;
+  width: 80%;
+  font-family: var(--font-family-one);
+  text-align: center;
+  color: var(--accent-color-three);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.service-description {
+  top: 250px;
+  position: absolute;
+  text-align: justify;
+  width: 90%;
+  font-family: var(--font-family-three);
+  font-size: 0.9em;
+}
+
+.read-more-btn {
+  position: absolute;
+  top: 335px;
+  border: none;
+  width: 50%;
+  height: 30px;
+  background-color: var(--accent-color-three);
+  color: var(--accent-color-two);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-family-three);
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+
+.read-more-btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

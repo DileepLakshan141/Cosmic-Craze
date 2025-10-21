@@ -1,0 +1,50 @@
+.not-found-page-container {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.not-found-page-opacity-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.not-found-page-content-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-color-two);
+}
+
+.not-found-page-logo {
+  width: 80%;
+  max-width: 450px;
+  transform: translateY(-50px);
+}
+
+.not-found-page-digit {
+  font-size: 10em;
+  font-weight: 600;
+  font-family: var(--font-family-five);
+  color: var(--accent-color-one);
+}
+
+.not-found-page-prompt {
+  font-family: var(--font-family-five);
+  color: var(--accent-color-two);
+  font-size: 1.3em;
+  text-align: center;
+}

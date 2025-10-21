@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap");
+
+/* variables */
+:root {
+  --font-family-one: "Bitter", serif;
+  --font-family-two: "Michroma", sans-serif;
+  --font-family-three: "Montserrat", sans-serif;
+  --font-family-four: "Orbitron", sans-serif;
+
+  --accent-color-one: #fff0c6;
+  --accent-color-two: #ecf0f1;
+  --accent-color-three: #2d3436;
+  --accent-color-four: #a5907e;
+  --secondary-color-one: #bdc3c7;
+  --secondary-color-two: #ecf0f1;
+}
+
+.header-container {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.nav-link-section {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link {
+  margin-top: 10px;
+  height: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-family: var(--font-family-two);
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::after {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-color-one);
+  transform: translateX(-100%);
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  transform: translateX(0);
+}
+
+.logo-section {
+  animation-name: logo-mover;
+  animation-duration: 2s;
+}
+
+@keyframes logo-mover {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*stylings for small size screens */
+@media only screen and (max-width: 576px) {
+  .header-container {
+    padding: 0 10px;
+  }
+
+  .nav-link-section {
+    display: none;
+  }
+
+  .logo-section {
+    min-width: 158px;
+    height: 22px;
+    background-size: contain;
+  }
+}
+
+/*stylings for medium size screens */
+@media only screen and (min-width: 577px) and (max-width: 968px) {
+  .header-container {
+    padding: 0 20px;
+  }
+
+  .nav-link-section {
+    display: none;
+  }
+
+  .logo-section {
+    width: 200px;
+    height: 28px;
+    background-size: contain;
+  }
+}
+
+/*stylings for desktops and large size screens */
+@media only screen and (min-width: 969px) {
+  .header-container {
+    padding: 0 30px;
+  }
+  .nav-link-section {
+    width: 600px;
+  }
+
+  .logo-section {
+    width: 200px;
+    height: 28px;
+    background-size: contain;
+  }
+}

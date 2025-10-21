@@ -1,0 +1,65 @@
+.manifest-card-container {
+  width: 270px;
+  min-height: 200px;
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.manifest-card-container * {
+  overflow-y: hidden;
+}
+
+.rover-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.manifest-data-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+}
+
+.manifest-label {
+  font-family: var(--font-family-three);
+  font-size: 0.9em;
+  color: var(--accent-color-one);
+  border-radius: 4px;
+}
+
+.manifest-label-value {
+  text-transform: capitalize;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-family: var(--font-family-five);
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--accent-color-two);
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.complete {
+  background-color: green;
+}
+
+.active {
+  background-color: orange;
+  color: var(--accent-color-three);
+}

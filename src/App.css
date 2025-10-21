@@ -1,0 +1,7 @@
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  background-size: cover;
+  z-index: 1;
+}

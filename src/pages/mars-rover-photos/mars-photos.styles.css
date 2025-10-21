@@ -1,0 +1,220 @@
+.mrp-main-container {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.mrp-opacity-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mrp-page-title {
+  font-family: var(--font-family-two);
+  color: var(--accent-color-one);
+  text-align: center;
+  padding: 4px;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.mrp-search-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 1;
+}
+
+.toggle-filter-text {
+  font-family: var(--font-family-three);
+  color: var(--accent-color-two);
+  font-size: 1.1em;
+}
+
+.toggle-filter-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-filter-icon {
+  color: var(--accent-color-two);
+  font-size: 1.5em;
+}
+
+.mrp-search-filter-container * {
+  overflow-y: hidden;
+}
+
+.mrp-search-option-partition {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: max-height 0.6s;
+}
+
+.partition-show {
+  max-height: 400px;
+}
+
+.partition-hide {
+  max-height: 0;
+}
+
+.filter-by-btn-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mrp-label {
+  font-family: var(--font-family-three);
+  color: var(--accent-color-two);
+  font-size: 1.1em;
+  margin: 4px;
+}
+
+.mrp-filter-btn {
+  padding: 3px 12px;
+  font-size: 1.1em;
+  background-color: transparent;
+  color: var(--accent-color-one);
+  font-family: var(--font-family-five);
+  font-size: 0.9em;
+  border: 1px solid var(--accent-color-one);
+  border-radius: 8px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.mrp-filter-btn:hover {
+  cursor: pointer;
+}
+
+.mrp-btn-active {
+  background-color: var(--accent-color-one);
+  color: var(--accent-color-three);
+}
+
+.mrp-date-picker[type="date"] {
+  margin-top: 5px;
+  background: var(--accent-color-one);
+  color: var(--accent-color-three);
+  border: none;
+  font-family: var(--font-family-five);
+  font-size: 0.9em;
+  outline: none;
+  border: 1px solid var(--accent-color-one);
+  border-radius: 8px;
+  margin-left: 5px;
+  padding: 3px 12px;
+}
+
+.date-condition {
+  color: var(--accent-color-four);
+  font-weight: 500;
+  margin: 5px 5px;
+  font-family: var(--font-family-five);
+  font-size: 0.8em;
+}
+
+.get-rover-photos-btn {
+  background-color: var(--accent-color-four);
+  padding: 4px 12px;
+  margin: 0 5px;
+  color: var(--accent-color-one);
+  font-family: var(--font-family-five);
+  font-size: 0.9em;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+
+.get-rover-photos-btn:hover {
+  cursor: pointer;
+}
+
+.filter-toggle-container {
+  width: 100%;
+  padding: 8px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mrp-filter-option-divider {
+  width: 100%;
+  margin: 5px 0;
+  border-color: var(--accent-color-two);
+}
+
+.mrp-search-result-displayer {
+  min-height: 30svh;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+/*stylings for small size screens */
+@media only screen and (max-width: 576px) {
+  .mrp-page-title {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+
+  .mrp-search-filter-container {
+    max-width: 350px;
+  }
+}
+
+/*stylings for medium size screens */
+@media only screen and (min-width: 577px) and (max-width: 968px) {
+  .mrp-page-title {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  .mrp-search-filter-container {
+    max-width: 450px;
+  }
+}
+
+/*stylings for desktops and large size screens */
+@media only screen and (min-width: 969px) {
+  .mrp-page-title {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+
+  .mrp-search-filter-container {
+    max-width: 450px;
+  }
+}

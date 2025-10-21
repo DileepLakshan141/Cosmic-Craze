@@ -1,0 +1,133 @@
+.swa-main-container {
+  width: 100%;
+  min-height: 100svh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.swa-opacity-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.swa-page-title {
+  margin-top: 40px;
+  font-family: var(--font-family-two);
+  color: var(--accent-color-one);
+  text-align: center;
+  padding: 4px;
+  z-index: 1;
+}
+
+.swa-alert-displayer {
+  width: 100%;
+  max-width: 600px;
+  flex: 1 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1;
+}
+
+.swa-filter-options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.filter-by-btn-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swa-sub-label {
+  font-family: var(--font-family-three);
+  color: var(--accent-color-two);
+  font-size: 1.1em;
+  margin: 4px;
+}
+
+.swa-value-holder {
+  margin-left: 10px;
+  color: var(--accent-color-one);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.filter-by-btn {
+  padding: 3px 12px;
+  font-size: 1.1em;
+  background-color: transparent;
+  color: var(--accent-color-one);
+  font-family: var(--font-family-five);
+  font-size: 0.9em;
+  border: 1px solid var(--accent-color-one);
+  border-radius: 8px;
+  margin: 5px;
+}
+
+.filter-by-btn:hover {
+  cursor: pointer;
+}
+
+.swa-btn-active {
+  background-color: var(--accent-color-one);
+  color: var(--accent-color-three);
+}
+
+/*stylings for small size screens */
+@media only screen and (max-width: 576px) {
+  .swa-page-title {
+    font-size: 1.2em;
+  }
+
+  .swa-alert-displayer {
+    min-height: 330px;
+    margin-top: 15px;
+  }
+}
+
+/*stylings for medium size screens */
+@media only screen and (min-width: 577px) and (max-width: 968px) {
+  .swa-page-title {
+    font-size: 1.5em;
+  }
+
+  .swa-alert-displayer {
+    min-height: 620px;
+    margin-top: 20px;
+  }
+}
+
+/*stylings for desktops and large size screens */
+@media only screen and (min-width: 969px) {
+  .swa-page-title {
+    font-size: 1.5em;
+  }
+
+  .swa-alert-displayer {
+    min-height: 450px;
+    margin-top: 20px;
+  }
+}
