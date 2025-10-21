@@ -60,7 +60,7 @@ The "Cosmic Craze" NASA API Application offers an immersive journey into space e
    npm install
    ```
 
-3. Replace the value for `MONGO_DB_URI` in the backend `.env` file with your mongo db URI. This is optional I have already included a db URI if you want you can use that. this include already created dummy user account. (email: james@gmail.com , password: james123)
+3. Replace the value for `MONGO_DB_URI` in the backend `.env` file with your mongo db URI.
 
 4. Replace the values for `ACCESS_SECRET_KEY` and `REFRESH_SECRET_KEY` in the backend `.env` file with some secret keys which will be used for issue and decode jwt tokens.(Optional)
 
