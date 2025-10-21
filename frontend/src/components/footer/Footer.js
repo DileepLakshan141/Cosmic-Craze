@@ -59,8 +59,8 @@ function Footer() {
       </div>
       <div className="footer-bottom-line">
         <span className="copyright-ribbon">
-          ©Developed & Maintained by Dileep Lakshan Hewavitharana (IT21189630).
-          All rights reserved.
+          ©Developed & Maintained by Dileep Lakshan Hewavitharana. All rights
+          reserved.
         </span>
       </div>
     </div>
